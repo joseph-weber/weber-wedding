@@ -3,7 +3,7 @@ import Vue from 'vue'
 <template>
   <div id="schedule-div">
     <h1 class="title">Schedule</h1>
-    <img id="venue-pic" src="../../static/wedding_invite.jpg" />
+    <img id="venue-pic" src="../../static/boys.jpg" />
     <div class="card w-60 large-card" v-for="item in items">
       <h1 class="pac">{{item.date}}</h1>
       <div class="event" v-for="event in item.events">
