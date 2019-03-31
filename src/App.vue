@@ -18,7 +18,7 @@ console.log(x)
         <div id="wedding-party" style="display: flex; flex-direction: column; text-align: center">
           <h1 v-show="page == 'home'">Primary Enablers</h1>
           <br/>
-          <div style="display: flex; margin: 0 auto;">
+          <div id="party-cards" style="display: flex; margin: 0 auto;">
           <Groomsmen v-show="page == 'home'"></Groomsmen>
           <Bridesmaids v-show="page == 'home'"></Bridesmaids>
           </div>
@@ -27,8 +27,8 @@ console.log(x)
         <ImagesCarousel v-show="page == 'photos'"></ImagesCarousel>
         <Registry v-show="page == 'registry'"></Registry>
         <Accomodations v-show="page == 'accomodations'"></accomodations>
+        <h1 style="display: none">{{windowWidth}}</h1>
         <MyFooter></MyFooter>
-        <HelloWorld></HelloWorld>
       </div>
     </div>
   </div>
@@ -43,7 +43,8 @@ export default {
     return {
       hello: 'hello world',
       page: 'home',
-      dropDown: false
+      dropDown: false,
+      windowWidth: 0
     }
   },
   mounted: function() {
@@ -51,7 +52,12 @@ export default {
    this.checkWidth()
    this.sticky()
   },
+  destroyed: function() {
+    this.handleResize();
+    window.removeEventListener('resize', this.handleResize)
+  },
   created: function() {
+      window.addEventListener('resize', this.handleResize)
       bus.$on('changePage', (data)=>{
           this.$data.page = data;
         })
@@ -59,19 +65,25 @@ export default {
         this.$data.dropDown = !this.$data.dropDown;
       })
       bus.$on('tooBig', (result)=>{
-        this.$data.page = 'home';
+        this.$data.page = this.$data.page;
         this.$data.dropDown = false;
       })
       this.sticky()
+      this.checkWidth()
+      this.handleResize();
     },
     updated: function() {
       bus.$on('tooBig', (result)=>{
-        this.$data.page = 'home';
+        this.$data.page = this.$data.page;
       })
       this.checkWidth()
       this.sticky()
+      this.handleResize();
     },
     methods: {
+      handleResize: function() {
+      this.windowWidth = window.innerWidth;
+      },
       checkWidth: function(init) {
         /*If browser resized, check width again */
         if ($(window).width() > 500) {
@@ -81,10 +93,10 @@ export default {
             $('#hamburger-div').removeClass('hamburger-nav');
         }
         else {
-                $('#navigation-bar').removeClass('exper-nav');
-                $('#navigation-bar').addClass('disappear');
-                $('#hamburger-div').removeClass('disappear');
-                $('#hamburger-div').addClass('hamburger-nav');
+              $('#navigation-bar').removeClass('exper-nav');
+              $('#navigation-bar').addClass('disappear');
+              $('#hamburger-div').removeClass('disappear');
+              $('#hamburger-div').addClass('hamburger-nav');
         }
       },
       sticky: function() {
