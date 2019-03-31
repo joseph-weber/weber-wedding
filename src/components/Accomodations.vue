@@ -20,7 +20,7 @@ import Vue from 'vue'
       return {
         items: [
           {
-            image: '../static/vinoy.jpg',
+            image: '../static/hyatt.jpg',
             link: '#',
             name: 'Hyatt Place St. Pete',
             description: 'Right across from the James Museum and in the heart of downtown. Walking distance from dozens of restaurants and bars. Not far from the Dali, Museum of Fine Arts and Chihuly Collection. Brand new construction.',
