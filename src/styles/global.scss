@@ -94,6 +94,10 @@ body {
   height: 3.4rem;
 }
 
+#navigation-bar {
+  z-index: 20;
+}
+
 .navbar-fixed-top {
   background-color: #2a3439;
   position: fixed;
@@ -494,7 +498,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20% auto;
+  margin: 25% auto 20% auto;
   width: 50%;
   height: 3rem;
   align-items: center;
