@@ -26,6 +26,7 @@ import Vue from 'vue'
 </template>
 
 <script>
+import $ from 'jquery';
 import { bus } from '../Events.js';
 export default {
   name: 'NavBar',
@@ -34,10 +35,14 @@ export default {
       dropDown: false
     }
   },
+  updated: function() {
+    this.sizeCheck()
+  },
+  mounted: function() {
+    this.sizeCheck()
+  },
   created: function() {
-    if ($(window).width() > 700) {
-      this.$data.dropDown = false;
-    }
+    this.sizeCheck()
   },
   methods: {
     pageChange: function (page) {
@@ -46,8 +51,27 @@ export default {
     },
     dropItDown: function () {
       bus.$emit('hamburgerClick');
-      this.$data.dropDown = !this.$data.dropDown;
+      this.$data.dropDown = true;
     },
+    sizeCheck: function (){
+      if ($(window).width() > 700) {
+      this.$data.dropDown = false;
+      } else {
+        this.$data.dropDown = true;
+      }
+      if ($(window).width() > 500) {
+        $('#navigation-bar').addClass('exper-nav');
+        $('#navigation-bar').removeClass('disappear');
+        $('#hamburger-div').addClass('disappear');
+        $('#hamburger-div').removeClass('hamburger-nav');
+      }
+      else {
+        $('#navigation-bar').removeClass('exper-nav');
+        $('#navigation-bar').addClass('disappear');
+        $('#hamburger-div').removeClass('disappear');
+        $('#hamburger-div').addClass('hamburger-nav');
+      }
+    }
   }
 }
 </script>
