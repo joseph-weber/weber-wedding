@@ -31,17 +31,20 @@ export default {
         {
           image: "https://pp.userapi.com/6Kf5KNYniYRWlI5HlKBpDIgWe1TIHfYivQgnzg/-jXA4eIpy4E.jpg?ava=1",
           role: 'Groomsman',
-          name: 'Rob Weber'
+          name: 'Rob Weber',
+          id: 'rob'
         },
         {
           image: 'https://pp.userapi.com/6Kf5KNYniYRWlI5HlKBpDIgWe1TIHfYivQgnzg/-jXA4eIpy4E.jpg?ava=1',
           role: 'Groomsman',
-          name: 'John van Fechtmann'
+          name: 'John van Fechtmann',
+          id: 'john'
         },
         {
           image: 'https://pp.userapi.com/6Kf5KNYniYRWlI5HlKBpDIgWe1TIHfYivQgnzg/-jXA4eIpy4E.jpg?ava=1',
           role: 'Groomsman',
-          name: 'Phil Rimmler'
+          name: 'Phil Rimmler',
+          id: 'phil'
         },
         {
           image: './assets/zach.png',
