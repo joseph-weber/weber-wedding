@@ -7,7 +7,7 @@ import Vue from 'vue'
   <div class="carousel-container">
     <div class="custom-carousel">
       <div id="image-container">
-        <img id="da-img" class="custom-img" :src="pic"/>
+        <img class="da-img custom-img" style="margin-bottom: 50px" :src="pic" :id="id"/>
       </div>
     </div>
     <div class="carousel-buttons">
@@ -24,13 +24,15 @@ export default {
   data () {
     return {
       index: 0,
-      pic: '../../static/new_years.png',
+      pic: '../../static/new_years1.png',
+      id: '',
       images: [
         {
-          src: '../../static/new_years.png'
+          src: '../../static/new_years1.png'
         },
         {
-          src: '../../static/bulldog.jpg'
+          src: '../../static/bulldog.jpg',
+          id: 'bulldog'
         },
         {
           src: '../../static/rowdies.jpg'
@@ -42,7 +44,8 @@ export default {
           src: '../../static/toledo.jpg'
         },
         {
-          src: '../../static/mahaffey.jpg'
+          src: '../../static/mahaffey.jpg',
+          id: 'mahaffey'
         },
         {
           src: '../../static/boys.jpg'
@@ -59,14 +62,14 @@ export default {
     click(direction) {
       let last_index = this.$data.images.length - 1;
       if(direction == 'right'){
-        $('#da-img').addClass('mySlides w3-animate-left');
+        $('.da-img').addClass('mySlides w3-animate-left');
         if(this.$data.index == last_index){
           this.$data.index = 0
         } else {
           this.$data.index = this.$data.index + 1
         }
       } else {
-        $('#da-img').addClass('mySlides w3-animate-right');
+        $('.da-img').addClass('mySlides w3-animate-right');
         if(this.$data.index == 0){
           this.$data.index = last_index
         } else {
@@ -76,14 +79,15 @@ export default {
       let i = this.$data.index
       let images = this.$data.images
       this.$data.pic = images[i].src
+      this.$data.id = images[i].id
       setTimeout(
         function(){
-          $('#da-img').removeClass("mySlides w3-animate-right");
-          $('#da-img').removeClass("mySlides w3-animate-left");
+          $('.da-img').removeClass("mySlides w3-animate-right");
+          $('.da-img').removeClass("mySlides w3-animate-left");
         }, 500);
     },
     whatPic() {
-      $('#da-img').removeClass('mySlides w3-animate-top');
+      $('.da-img').removeClass('mySlides w3-animate-top');
     }
   },
 }
