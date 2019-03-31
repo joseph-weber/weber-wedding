@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import { bus } from '../Events.js';
 export default {
   name: 'Activities',
   data () {
@@ -105,7 +106,7 @@ export default {
               },
               {
                 title: 'St Pete Beach',
-                image: '../../static/beach.jpg',
+                image: '../../static/beach.jpeg',
                 description: '#4 best beach in US according to TripAdvisor.',
                 link: 'https://www.visitstpeteclearwater.com/communities/st-pete-beach'
               },
@@ -132,6 +133,12 @@ export default {
                 image: '../../static/greenbench.jpg',
                 description: 'Brewery with great outdoor space and excellent saisons.',
                 link: 'http://greenbenchbrewing.com/'
+              },
+              {
+                title: 'Right Around the Corner',
+                image: '../../static/around_the_corner.jpg',
+                description: 'Beer bar with vintage arcade games and pool tables. So much fun.',
+                link: 'http://stpetearcadebar.com/'
               },
               {
                 title: 'Cycle',
