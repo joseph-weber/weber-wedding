@@ -14,7 +14,7 @@ import Vue from 'vue'
       <div class="registry">
         <img class="registry-img" :src="item.logo" />
         <p>{{item.info}}</p>
-        <a class="registry-link" :href="item.link">{{item.name}}</a>
+        <a class="registry-link" target="_blank" :href="item.link">{{item.name}}</a>
       </div>
     </div>
   </div>

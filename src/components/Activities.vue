@@ -20,7 +20,7 @@
         <img :src="location.image" />
         <br/>
         <p>{{location.description}}</p>
-        <a :href="location.link">Website</a>
+        <a target="_blank" :href="location.link">Website</a>
       </div>
     </div>
   </div>

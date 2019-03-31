@@ -11,6 +11,7 @@ import Vue from 'vue'
         <p class="pac">Time: {{event.time}}</p>
         <p class="pac">Where: {{event.where}}</p>
         <p class="pac">Address: {{event.address}}</p>
+        <p class="pac">{{event.what}}</p>
       </div>
     </div>
   </div>
@@ -28,9 +29,10 @@ export default {
             [
               {
                 time: '8 pm',
-                event: 'Out of Town Guest Party',
-                where: 'Intermezzo Coffee & Cocktail Bar',
-                address: '655 2nd Ave S. St. Petersburg, FL'
+                event: 'Out of Town Guest Reception',
+                where: 'Pinellas Ale Works (PAW)',
+                address: '1962 1st Ave S, St. Petersburg, FL',
+                what: 'Please join us for beer, wine, soft drinks and desserts at a local dog-themed brewery.'
               }
             ] 
         },
@@ -46,7 +48,7 @@ export default {
               },
               {
                 time: '6:30 pm',
-                event: 'Wedding Reception',
+                event: 'Wedding Ceremony',
                 where: 'James Museum',
                 address: '150 Central Ave, St. Petersburg, FL'
               },
@@ -57,10 +59,10 @@ export default {
                 address: '150 Central Ave, St. Petersburg, FL'
               },
               {
-                time: '8 pm',
+                time: '11:00 pm',
                 event: 'After Party',
-                where: 'Che @ Ceviche Tapas',
-                address: 'Address for Ceviche'
+                where: 'TBD',
+                address: 'TBD'
               }
             ]
         },
@@ -71,8 +73,8 @@ export default {
               {
                 time: '11 am',
                 event: 'Brunch',
-                where: 'Somewhere',
-                address: 'Some Address'
+                where: 'TBD',
+                address: 'TBD'
               }
             ]
         }

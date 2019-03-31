@@ -7,7 +7,7 @@ import Vue from 'vue'
         <h1 class="accomodation-item" style="text-align: center">{{item.name}}</h1>
         <img class="accomodation-img" v-bind:src="item.image" />
         <p class="accomodation-item">{{item.description}}</p>
-        <a class="registry-link accomodation-item" :href="item.link"></a>
+        <a class="registry-link accomodation-item" target="_blank" :href="item.link">Website</a>
       </div>
     </div>
   </div>
