@@ -116,7 +116,7 @@ body {
 
 #lorem {
   width: 60%;
-  font-family: 'sans-serif';
+  font-family: 'Quicksand';
   text-align: center;
   margin: 0 auto;
 }
@@ -360,8 +360,16 @@ body {
 }
 
 .avatar {
-  background-image: url('/static/zach.png');
+  background-image: url('/static/avatar.JPG');
   background-size: cover;
+}
+
+#mahaffey, #bulldog {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 #zach {
@@ -370,7 +378,27 @@ body {
 }
 
 #blaire {
-  background-image: url('/static/blaire.jpg');
+  background-image: url('/static/blaire2.png');
+  background-size: cover;
+}
+
+#phil {
+  background-image: url('/static/phil.jpg');
+  background-size: cover;
+}
+
+#rob {
+  background-image: url('/static/rob.jpg');
+  background-size: cover;
+}
+
+#john {
+  background-image: url('/static/john.jpg');
+  background-size: cover;
+}
+
+#samantha {
+  background-image: url('/static/samantha.png');
   background-size: cover;
 }
 
@@ -416,6 +444,8 @@ body {
 
 #the-couple {
   border-radius: 20px;
+  width: 60%;
+  height: auto;
 }
 
 .disappear {
@@ -479,16 +509,19 @@ body {
 }
 
 .custom-img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   padding-bottom: 10%;
   padding-top: 10%;
-  margin: 0 auto;
+  margin: 0 auto 20px 0;
 }
 
 .side-arrow {
   font-size: 3rem;
   margin: 0 3rem;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .carousel-buttons {
@@ -509,4 +542,22 @@ body {
     display: flex;
     flex-direction: column;
   }
+  #party-cards {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
+
+.couple-item {
+  font-family: 'Quicksand';
+}
+
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
