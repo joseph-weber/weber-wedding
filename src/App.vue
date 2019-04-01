@@ -16,7 +16,7 @@ console.log(x)
         <Couple v-show="page == 'home'"></Couple>
         <Destination v-show="page == 'destination'"></Destination>
         <div id="wedding-party" style="display: flex; flex-direction: column; text-align: center">
-          <h1 v-show="page == 'home'">Primary Enablers</h1>
+          <h1 v-show="page == 'home'">Wedding Party</h1>
           <br/>
           <div id="party-cards" style="display: flex; margin: 0 auto;">
           <Groomsmen v-show="page == 'home'"></Groomsmen>
