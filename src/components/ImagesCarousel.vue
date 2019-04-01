@@ -29,7 +29,7 @@ export default {
           src: '../../static/newyears.jpg'
         },
         {
-          src: '../../static/bulldog.jpg',
+          src: '../../static/bulldog_copy.jpg',
           id: 'bulldog'
         },
         {

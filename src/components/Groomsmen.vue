@@ -55,7 +55,8 @@ export default {
         {
           image: 'https://pp.userapi.com/6Kf5KNYniYRWlI5HlKBpDIgWe1TIHfYivQgnzg/-jXA4eIpy4E.jpg?ava=1',
           role: 'Groomsman',
-          name: 'Zubair Ravat'
+          name: 'Zubair Ravat',
+          id: 'zubair'
         }
       ]
     }
