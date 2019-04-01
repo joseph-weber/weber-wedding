@@ -489,7 +489,7 @@ body {
 
 .carousel-container {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -498,7 +498,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 25% auto 20% auto;
+  margin: 25% auto 25% auto;
   width: 50%;
   height: 3rem;
   align-items: center;
