@@ -7,12 +7,10 @@ import Vue from 'vue'
   <div class="carousel-container">
     <div class="custom-carousel">
       <div id="image-container">
+        <p class="side-arrow" v-on:click="click('left')"><</p>
         <img class="da-img custom-img" style="margin-bottom: 50px" :src="pic" :id="id"/>
+        <p class="side-arrow" v-on:click="click('right')">></p>
       </div>
-    </div>
-    <div class="carousel-buttons">
-      <p class="side-arrow" v-on:click="click('left')"><</p>
-      <p class="side-arrow" v-on:click="click('right')">></p>
     </div>
   </div>
 </template>
@@ -24,18 +22,18 @@ export default {
   data () {
     return {
       index: 0,
-      pic: '../../static/new_years1.png',
+      pic: '../../static/newyears.jpg',
       id: '',
       images: [
         {
-          src: '../../static/new_years1.png'
+          src: '../../static/newyears.jpg'
         },
         {
           src: '../../static/bulldog.jpg',
           id: 'bulldog'
         },
         {
-          src: '../../static/rowdies.jpg'
+          src: '../../static/green_hats.jpg'
         },
         {
           src: '../../static/the_couple.jpg'
@@ -51,7 +49,29 @@ export default {
           src: '../../static/boys.jpg'
         },
         {
-          src: '../../static/safety.jpg'
+          src: '../../static/helping_jeffrey.jpg',
+          id: 'jeffrey'
+        },
+        {
+          src: '../../static/shoot1.jpg'
+        },
+        {
+          src: '../../static/engagement.jpg'
+        },
+        {
+          src: '../../static/madeline_does_diners.jpg'
+        },
+        {
+          src: '../../static/ski.jpg',
+          id: 'ski'
+        },
+        {
+          src: '../../static/shoot2.jpg',
+          id: 'shoot2'
+        },
+        {
+          src: '../../static/crazy_hats.jpg',
+          id: 'crazy_hats'
         }
       ]
     }
