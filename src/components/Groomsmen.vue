@@ -5,12 +5,14 @@ import Vue from 'vue'
 
 <template>
   <div class="wedding-party">
-    <div v-for="item in items" class="card" style="width: 18rem;">
+    <div v-for="item in items" class="card white" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">{{item.name}}</h5>
-        <div class="avatar" :id="item.id">
-        </div>
-        <p class="card-text">{{item.role}}</p>
+      <div class="avatar" :id="item.id">
+      </div>
+      <div>
+        <h5 style="text-align: center; margin-top: 5px; margin-bottom: 0;" class="card-title">{{item.name}}</h5>
+        <p style="text-align: center; margin-top: 5px; margin-top: 0;"class="card-text">{{item.role}}</p>
+      </div>
       </div>
     </div>
   </div>

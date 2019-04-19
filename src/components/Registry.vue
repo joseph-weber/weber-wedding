@@ -33,18 +33,13 @@ export default {
           name: 'Bloomingdales'
         },
         {
-          logo: '../../static/container.jpg',
-          link: 'https://www.bloomingdales.com/registry/wedding/guest/?perfectProxy=true&registryId=2400758&cm_sp=BWEDD_Find_Registry-_-View_GVR-_-n',
-          name: 'Container Store'
-        },
-        {
           logo: '../../static/crate.png',
-          link: 'https://www.bloomingdales.com/registry/wedding/guest/?perfectProxy=true&registryId=2400758&cm_sp=BWEDD_Find_Registry-_-View_GVR-_-n',
+          link: 'https://www.crateandbarrel.com/gift-registry/jaclyn-frumkin-and-joseph-weber/r5966597/',
           name: 'Crate and Barrel'
         },
         {
-          logo: '../../static/casa.png',
-          link: 'https://www.bloomingdales.com/registry/wedding/guest/?perfectProxy=true&registryId=2400758&cm_sp=BWEDD_Find_Registry-_-View_GVR-_-n',
+          logo: '../../static/casa.jpg',
+          link: 'https://www.casa-stpete.org/',
           name: 'Casa',
           info: 'Please consider contributing to our donation to Casa St. Pete. Together we can help end domestic abuse while empowering survivors.'
         }

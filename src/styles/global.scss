@@ -183,21 +183,28 @@ body {
 
 .card {
   margin: 20px auto 20px auto;
+  background-color: rgba(122, 122, 122, .3);
 }
 
 .card-body {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .avatar {
-  height: 7rem;
-  width: 7rem;
-  border-radius: 7rem;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 9rem;
+  border: 0.5px solid rgba(122, 122, 122, .5);
 }
 
 .large-card {
   margin: 20px auto;
   width: 60%;
+  background-color: rgba(122, 122, 122, .3);
 }
 
 #carousel-div {
@@ -282,6 +289,9 @@ body {
 
 .event {
   margin: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
 }
 
 .d-block {
@@ -349,6 +359,14 @@ body {
   text-align: center;
 }
 
+
+.activity-blank {
+  width: 2rem;
+  height: 2rem;
+  margin: 10px;
+}
+
+
 .arrow {
   width: 2rem;
   height: 2rem;
@@ -381,7 +399,12 @@ body {
   background-size: cover;
 }
 
-#kim {
+#geoff {
+  background-image: url('/static/geoff.jpeg');
+  background-size: cover;
+}
+
+#bimp {
   background-image: url('/static/kim.jpg');
   background-size: cover;
 }
@@ -391,18 +414,37 @@ body {
   background-size: cover;
 }
 
+#mary {
+  background-image: url('/static/mary.jpg');
+  background-size: cover;
+}
+
+.hotel-group {
+  text-align: center;
+}
+
+#erica {
+  background-image: url('/static/erica.jpg');
+  background-size: cover;
+}
+
 #blaire {
   background-image: url('/static/blaire2.png');
   background-size: cover;
 }
 
 #phil {
-  background-image: url('/static/phil.jpg');
+  background-image: url('/static/728005-large.png');
   background-size: cover;
 }
 
 #rob {
-  background-image: url('/static/rob.jpg');
+  background-image: url('/static/bob.jpg');
+  background-size: cover;
+}
+
+#lizzie {
+  background-image: url('/static/lizzie.jpg');
   background-size: cover;
 }
 
@@ -560,6 +602,10 @@ body {
     display: flex;
     flex-direction: column;
   }
+}
+
+.white {
+  background: #fff;;
 }
 
 

@@ -4,9 +4,9 @@
 import Vue from 'vue'
 
 <template>
-  <div class="carousel-container">
+  <div class="carousel-container" >
     <div class="custom-carousel">
-      <div id="image-container">
+      <div id="image-container" >
         <p class="side-arrow" v-on:click="click('left')"><</p>
         <img class="da-img custom-img" style="margin-bottom: 50px" :src="pic" :id="id"/>
         <p class="side-arrow" v-on:click="click('right')">></p>
@@ -26,7 +26,8 @@ export default {
       id: '',
       images: [
         {
-          src: '../../static/newyears.jpg'
+          src: '../../static/newyears.jpg',
+          title: 'Our first New Years together'
         },
         {
           src: '../../static/bulldog_copy.jpg',

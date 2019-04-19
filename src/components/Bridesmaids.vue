@@ -2,12 +2,14 @@ import Vue from 'vue'
 
 <template>
   <div class="wedding-party">
-    <div v-for="item in items" class="card" style="width: 18rem;">
+    <div v-for="item in items" class="card white" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">{{item.role}}</h5>
-        <div class="avatar" :id="item.id">
-        </div>
-        <p class="card-text">{{item.name}}</p>
+      <div class="avatar" :id="item.id">
+      </div>
+      <div>
+        <h5 style="text-align: center; margin-top: 5px; margin-bottom: 0;" class="card-title">{{item.name}}</h5>
+        <p style="text-align: center; margin-top: 5px; margin-top: 0;"class="card-text">{{item.role}}</p>
+      </div>
       </div>
     </div>
   </div>
@@ -23,7 +25,7 @@ export default {
           image: 'https://pp.userapi.com/6Kf5KNYniYRWlI5HlKBpDIgWe1TIHfYivQgnzg/-jXA4eIpy4E.jpg?ava=1',
           role: 'Matron of Honour',
           name: 'Kim Frumkin',
-          id: 'kim'
+          id: 'bimp'
         },
         {
           image: "./assets/blair.jpg",
@@ -34,17 +36,20 @@ export default {
         {
           image: 'https://pp.userapi.com/6Kf5KNYniYRWlI5HlKBpDIgWe1TIHfYivQgnzg/-jXA4eIpy4E.jpg?ava=1',
           role: 'Bridesmaid',
-          name: 'Erica Benstock'
+          name: 'Erica Benstock',
+          id: 'erica'
         },
         {
           image: 'https://pp.userapi.com/6Kf5KNYniYRWlI5HlKBpDIgWe1TIHfYivQgnzg/-jXA4eIpy4E.jpg?ava=1',
           role: 'Bridesmaid',
-          name: 'Lizzie McLain'
+          name: 'Lizzie Pierret',
+          id: 'lizzie'
         },
         {
           image: 'https://pp.userapi.com/6Kf5KNYniYRWlI5HlKBpDIgWe1TIHfYivQgnzg/-jXA4eIpy4E.jpg?ava=1',
           role: 'Bridesmaid',
-          name: 'Mary Weber'
+          name: 'Mary W',
+          id: 'mary'
         },
         {
           image: 'https://pp.userapi.com/6Kf5KNYniYRWlI5HlKBpDIgWe1TIHfYivQgnzg/-jXA4eIpy4E.jpg?ava=1',
